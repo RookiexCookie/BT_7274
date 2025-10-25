@@ -1,0 +1,121 @@
+{
+  "_comment": "Complete BT-7274 Configuration - October 25, 2025",
+  "assistant_name": "BT",
+  "paths": {
+    "_comment": "File paths relative to the main python script.",
+    "piper_exe": "piper/piper.exe",
+    "voice_model": "en_US-joe-medium.onnx",
+    "font_file": "fonts/Rajdhani-SemiBold.ttf",
+    "tts_cache_dir": "tts_cache",
+    "memory_file": "memory.json",
+    "clipboard_log": "clipboard_log.txt",
+    "watchdog_file": "watchdog_hashes.json",
+    "backup_dir": "C:/Users/Rookie/Backups"
+  },
+  "api_keys": {
+    "openweather_api_key": "YOUR_OPENWEATHERMAP_API_KEY",
+    "weather_city": "Bhilai,IN"
+  },
+  "settings": {
+    "push_to_talk_key": "f7",
+    "wifi_interface_name": "Wi-Fi"
+  },
+  "spotify": {
+    "_comment": "Get these from https://developer.spotify.com/dashboard/",
+    "client_id": "client_id",
+    "client_secret": "client_secret",
+    "redirect_uri": "http://127.0.0.1:8888/callback"
+  },
+  "rss_feeds": {
+    "_comment": "Add nicknames and URLs for RSS feeds you want to monitor.",
+    "gamedev": "https://www.gamedeveloper.com/rss.xml",
+    "godot": "https://godotengine.org/rss.xml"
+  },
+  "watchdog_targets": {
+    "_comment": "Add nicknames, URLs, and CSS selectors for webpages to watch.",
+    "godot_news": {
+      "url": "https://godotengine.org/news",
+      "selector": "div.posts-container"
+    }
+  },
+  "project_paths": {
+    "_comment": "Add nicknames and full paths to your local Git repositories.",
+    "my_assistant": "C:/Work/important stuff/B.T. Ai",
+    "love": "C:/Work/important stuff/love-deck"
+  },
+  "backup_targets": {
+    "_comment": "Add nicknames and full paths to folders you want to back up.",
+    "assistant_code": "C:/Work/important stuff/B.T. Ai"
+  },
+  "macros": {
+    "_comment": "Define sequences of actions (using command 'type' and 'data').",
+    "coding": [
+          {
+            "type": "app.open",
+            "data": "visual studio code"
+          },
+          {
+            "type": "web.open",
+            "data": "github"
+          },
+          {
+            "type": "media.play_music",
+            "data": "lofi"
+          }
+        ]
+  },
+  "confirmation_words": [
+    "yes", "confirm", "affirmative", "do it", "proceed"
+  ],
+  "dialogue_pools": {
+    "startup": [ "Welcome back, Pilot. All systems online.", "My systems are yours.", "BT-7 2 7 4 online and ready for combat." ],
+    "error": [ "Negative, Pilot. That command is not in my database.", "Objection: That command is not recognized.", "I am incapable of that action, Pilot." ],
+    "confirmation": [ "Awaiting confirmation, Pilot.", "Confirm directive?", "Please confirm to proceed." ],
+    "shutdown": [ "Going offline. Goodbye, Pilot.", "Acknowledged. Deactivating systems." ],
+    "jokes": [ "Why don't scientists trust atoms? Because they make up everything.", "I told my computer I needed a break... now it won’t stop sending me Kit-Kat ads." ],
+    "ptt_ack": [ "Listening, Pilot.", "Go ahead.", "I'm listening." ],
+    "spotify_error": [ "Spotify connection error, Pilot.", "Unable to connect to Spotify." ],
+    "spotify_no_device": [ "No active Spotify device found. Please play on a device first.", "I cannot detect an active Spotify client." ]
+  },
+  "commands": [
+    { "name": "Shutdown Script", "keywords": ["go to sleep", "goodbye" , "disable titan"], "type": "script.shutdown" },
+    { "name": "Report System Status", "keywords": ["system status", "report status"], "type": "system.status", "ack": "Analyzing system vitals." },
+    { "name": "Report Top Processes", "keywords": ["what's draining my resources", "top processes"], "type": "system.top_processes", "ack": "Analyzing resource drain." },
+    { "name": "Shutdown System", "keywords": ["shutdown system", "shut down computer"], "type": "system.shutdown" },
+    { "name": "Restart System", "keywords": ["restart system", "reboot computer"], "type": "system.restart" },
+    { "name": "Lock Workstation", "keywords": ["lock system", "lock computer"], "type": "system.lock", "ack": "Securing workstation." },
+    { "name": "Set Brightness", "keywords": ["set brightness to"], "type": "system.set_brightness" },
+    { "name": "Disable WiFi", "keywords": ["disable wifi", "turn off wifi"], "type": "system.wifi_off", "ack": "Disabling Wi-Fi adapter." },
+    { "name": "Enable WiFi", "keywords": ["enable wifi", "turn on wifi"], "type": "system.wifi_on", "ack": "Enabling Wi-Fi adapter." },
+    { "name": "Open Website", "keywords": ["open website"], "type": "web.open", "ack": "Accessing address.", "targets": { "youtube": "https://www.youtube.com", "gemini": "https://gemini.google.com", "github": "https://github.com" } },
+    { "name": "Open Application", "keywords": ["open", "launch", "start"], "type": "app.open", "ack": "Executing launch.", "targets": { "spotify": "C:/Users/rookie/AppData/Roaming/Spotify/Spotify.exe", "notepad": "notepad.exe", "godot": "C:/path/to/godot.exe" } },
+    { "name": "Close Application", "keywords": ["close", "terminate", "kill process"], "type": "app.close", "ack": "Executing termination.", "targets": { "spotify": "Spotify.exe", "notepad": "notepad.exe", "chrome": "chrome.exe", "godot": "godot.exe" } },
+    { "name": "Search The Web", "keywords": ["search for", "google"], "type": "web.search", "ack": "Querying database.", "url_template": "https://www.google.com/search?q={query}" },
+    { "name": "Check Webpage", "keywords": ["check webpage", "check my watchdog"], "type": "web.watchdog" },
+    { "name": "Check Intel Feeds", "keywords": ["check my intel feeds", "any new intel"], "type": "feed.check", "ack": "Checking RSS feeds." },
+    { "name": "Play Music (Spotify)", "keywords": ["play music", "play song", "play"], "type": "media.play_music" },
+    { "name": "Get Now Playing", "keywords": ["what's playing", "now playing"], "type": "media.now_playing" },
+    { "name": "Play/Pause Media", "keywords": ["play pause", "pause music", "resume music"], "type": "media.key_press", "key": "playpause" },
+    { "name": "Next Track", "keywords": ["next track", "skip song"], "type": "media.key_press", "key": "nexttrack" },
+    { "name": "Previous Track", "keywords": ["previous track", "last song"], "type": "media.key_press", "key": "prevtrack" },
+    { "name": "Mute Volume", "keywords": ["mute", "unmute"], "type": "media.key_press", "key": "volumemute" },
+    { "name": "Volume Up", "keywords": ["volume up", "increase volume"], "type": "media.volume_change", "direction": "up", "amount": 5 },
+    { "name": "Volume Down", "keywords": ["volume down", "decrease volume"], "type": "media.volume_change", "direction": "down", "amount": 5 },
+    { "name": "Remember Note", "keywords": ["remember that", "take a note"], "type": "utility.remember" },
+    { "name": "Recall Note", "keywords": ["what did I say about", "what do you remember about"], "type": "utility.recall" },
+    { "name": "Archive Clipboard", "keywords": ["archive clipboard", "save this"], "type": "utility.archive_clipboard", "ack": "Clipboard archived." },
+    { "name": "Find File", "keywords": ["find my file", "search for file"], "type": "file.search" },
+    { "name": "Move File", "keywords": ["move file", "move that", "move it"], "type": "file.move" },
+    { "name": "Delete File", "keywords": ["delete file", "delete that", "delete it"], "type": "file.delete" },
+    { "name": "Clean Desktop", "keywords": ["clean my desktop", "desktop janitor"], "type": "file.desktop_janitor" },
+    { "name": "Run Backup", "keywords": ["run backup protocol", "backup my files"], "type": "backup.run" },
+    { "name": "Run Macro", "keywords": ["run macro", "set up for", "initiate workspace"], "type": "macro.run" },
+    { "name": "Git Status", "keywords": ["git status for", "check project status"], "type": "git.status" },
+    { "name": "Git Commit & Push", "keywords": ["commit and push", "save my work"], "type": "git.commit_push" },
+    { "name": "Report Time", "keywords": ["what time is it", "current time"], "type": "general.time" },
+    { "name": "Report Date", "keywords": ["what is the date", "today's date"], "type": "general.date" },
+    { "name": "Tell a Joke", "keywords": ["tell a joke", "say something funny"], "type": "general.joke", "ack": "Accessing humor database." },
+    { "name": "Query Weather", "keywords": ["what's the weather", "weather report"], "type": "api.weather", "ack": "Acquiring atmospheric data." },
+    { "name": "Type Command", "keywords": ["type this", "dictate"], "type": "utility.type", "ack": "Typing initiated." }
+  ]
+}
