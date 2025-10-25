@@ -1,9 +1,9 @@
 # BT-7274 Desktop Assistant
+<div align="center">
 
-<p align="center">
-  <img src="https://i.makeagif.com/media/2-06-2019/dg8ABS.gif" alt="BT-7274 Thumbs Up" width="400"/>
-</p>
+![BT-7274 Thumbs Up](https://pa1.aminoapps.com/6772/652ca3dfccf742406c6798e63dfaad4cc58cdd56_hq.gif)
 
+</div>
 <p align="center">
   <strong>"Welcome back, Pilot. All systems online."</strong>
 </p>
@@ -176,7 +176,7 @@ Examples:
 * “Commit and push project.”
 
 <p align="center">
-  <img src="https://64.media.tumblr.com/52bb5d1555ea412000cd63b1ab5374e2/tumblr_inline_oge54tElHJ1r0lyp7_500.gifv" alt="Protocol 3" width="400"/>
+  <img src="https://64.media.tumblr.com/52bb5d1555ea412000cd63b1ab5374e2/tumblr_inline_oge54tElHJ1r0lyp7_500.gif" alt="Protocol 3" width="400"/>
 </p>
 
 <p align="center">
@@ -201,3 +201,6 @@ This software is for **educational and personal use only**.
 > Mission parameters complete. Awaiting further orders, Pilot.”  
 
 — **BT-7274**
+<p align="center">
+  <img src="https://media.tenor.com/XhMflGtMvOIAAAAM/titanfall.gif" alt="Protocol 3" width="400"/>
+</p>
