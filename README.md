@@ -1,7 +1,7 @@
 # BT-7274 Desktop Assistant
 
 <p align="center">
-  <img src="https://media1.tenor.com/m/9wI_bxPl3LIAAAAC/thumbs-up-bt7274.gif" alt="BT-7274 Thumbs Up" width="400"/>
+  <img src="https://i.makeagif.com/media/2-06-2019/dg8ABS.gif" alt="BT-7274 Thumbs Up" width="400"/>
 </p>
 
 <p align="center">
@@ -176,7 +176,7 @@ Examples:
 * “Commit and push project.”
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajNsNmg2emJ5cWt0enp3ZDE1aDNpdTIybnFkZzMzN2J0eWN0eDJocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9J1mS0uR1DRn1iVv4Q/giphy.gif" alt="Protocol 3" width="400"/>
+  <img src="https://64.media.tumblr.com/52bb5d1555ea412000cd63b1ab5374e2/tumblr_inline_oge54tElHJ1r0lyp7_500.gifv" alt="Protocol 3" width="400"/>
 </p>
 
 <p align="center">
