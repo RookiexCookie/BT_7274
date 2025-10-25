@@ -1,0 +1,18 @@
+# Core Dependencies
+pyautogui
+pynput
+SpeechRecognition
+sounddevice
+soundfile
+requests
+psutil
+
+# Optional Dependencies (needed for specific features)
+noisereduce
+numpy
+pyperclip
+feedparser
+beautifulsoup4
+GitPython
+screen-brightness-control
+spotipy
