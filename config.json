@@ -22,7 +22,7 @@
   },
   "spotify": {
     "_comment": "Get these from https://developer.spotify.com/dashboard/",
-    "client_id": "client_id",
+    "client_id": "YOUR_SPOTIFY_CLIENT_ID",
     "client_secret": "client_secret",
     "redirect_uri": "http://127.0.0.1:8888/callback"
   },
@@ -118,4 +118,5 @@
     { "name": "Query Weather", "keywords": ["what's the weather", "weather report"], "type": "api.weather", "ack": "Acquiring atmospheric data." },
     { "name": "Type Command", "keywords": ["type this", "dictate"], "type": "utility.type", "ack": "Typing initiated." }
   ]
+
 }
